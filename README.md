@@ -33,7 +33,7 @@ The console will be opened at the bottom of the page as shown in the following f
  ![a7](images/a7.jpg)  
 # Create a Confluent Kafka Cluster
 1.	Open [the Confluent Cloud-native Service for Apache Kafka](https://www.confluent.io/confluent-cloud/). Then click **TRY FREE**.  
-![b1](images/b1.jpg)  
+![b1](images/b1.jpg | width=90%)  
 2.	Sign in with the same Google account  
 ![b2](images/b2.jpg)  
 3.	Enter your personal Information. Then, click **Submit**  
