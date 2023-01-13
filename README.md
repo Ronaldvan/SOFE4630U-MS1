@@ -2,7 +2,10 @@
 ## Repository: 
 [https://github.com/GeorgeDaoud3/SOFE4630U-MS1](https://github.com/GeorgeDaoud3/SOFE4630U-MS1)
 ## Objectives
-1. 
+1.	Understand the role of Data Ingestion System in Event Driven Architecture.
+2.	Get familiar with Kafka and its terminologies. 
+3.	Be able to create topics, producers, and consumers via GUI and code.
+4.	Get familiar with Google Pub/sub.
 ## What’s Kafka?
 1.	Watch the following video about [Event Driven Architecture (EDA)](https://www.youtube.com/watch?v=o2HJCGcYwoU)
 2.	The core component of an EDA is the Data Ingestion System also known as Publisher/subscriber (pub/sup). 
@@ -100,3 +103,12 @@ Save the file and run it, the output should look like
 4.	Edit **consumer.py** to create a consumer that reads from **smartMeter** topic as you did in the previous section. Leave the file running such that you can consume the messages once they produced to the topic. The only difference in the message get decoded by the **json.loads()** function as the producer will send a JSON object instead of string.
 5.	Edit **smartMeter.py** to create to produce smart meter measurements generated randomly. Update the topic name as before to **smartMeter**. The code looks like the same except the lines shown in the following figure. Lines from 12 to 18 have values that will be used to generate messages. Lines 33 till 54 are within a loop that will randomly generate messages that will be sent to the Kafka topic.  
 ![e1](images/e1.jpg)  
+## Discussion
+* What is EDA? What are its advantages and disadvantages?
+* In Kafka, what’s meant by cluster, broker, topic, replica, partition, zookeeper, controller, leader, consumer, producer, and consumer group?
+## Design
+Google has an alternative ingestion tool called **Google Pub/sub**. Configure it and create a topic using Cloud interface. write a python code for a Google Pub/sub consumer and producer. The producer and the consumer should act as the smart meter shown before. **Note:** they needed a different library than that used for confluent kafka.
+## Deliverables
+1. A report that includes the discussion and the design parts. 
+2. An audible video of about 3 minutes showing the smart meter using confluent cloud Kafka. 
+3.  Another  audible  video  of about 5  minutes showing  the  design part. 
