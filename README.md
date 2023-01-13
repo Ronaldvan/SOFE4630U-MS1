@@ -22,9 +22,9 @@ like Google Cloud Platform (GCP) to create a Kafka cluster. Thus, we will start 
 6.	Get yourself familiar with
 * Dashboard: allows you to search and select available cloud services
 * project(s): a project usually named **My First Project** will be created but we can create, edit, and delete projects.
-* The console: By clicking the console icon, the console will be opened to you. The console is a Linux terminal that can be used to configure the cloud. Any commands that affect the console local OS will be temporary and lost whenever the session is closed while any change made to any cloud services will be permanent.
-![a5](images/a5.jpg)
-&snap;&snap;&snap;&snap;The console will be opened at the bottom of the page as shown in the following figure and from it we can exchange files and folders with your local computer by downloading or uploading them. You can also click Open Editor button to open the editor.
- 
-* Editor: It’s a text editor that allows you to edit plain text file as shown in the following figure. You can switch back to the console by clicking Open Terminal button
- 
+* The console: By clicking the console icon, the console will be opened to you. The console is a Linux terminal that can be used to configure the cloud. Any commands that affect the console local OS will be temporary and lost whenever the session is closed while any change made to any cloud services will be permanent.  
+![a5](images/a5.jpg)  
+The console will be opened at the bottom of the page as shown in the following figure and from it we can exchange files and folders with your local computer by downloading or uploading them. You can also click **Open Editor** button to open the editor.
+ ![a6](images/a6.jpg)  
+* Editor: It’s a text editor that allows you to edit plain text file as shown in the following figure. You can switch back to the console by clicking **Open Terminal** button
+ ![a7](images/a7.jpg)
