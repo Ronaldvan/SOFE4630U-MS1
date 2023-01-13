@@ -1,4 +1,4 @@
-# Lab 1: Data Ingestion System (Apache Kafka)
+# Milestone 1: Data Ingestion System (Apache Kafka)
 ## Repository: 
 [https://github.com/GeorgeDaoud3/SOFE4630U-MS1](https://github.com/GeorgeDaoud3/SOFE4630U-MS1)
 ## Objectives
