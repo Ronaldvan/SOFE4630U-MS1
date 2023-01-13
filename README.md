@@ -28,3 +28,17 @@ The console will be opened at the bottom of the page as shown in the following f
  ![a6](images/a6.jpg)  
 * Editor: It’s a text editor that allows you to edit plain text file as shown in the following figure. You can switch back to the console by clicking **Open Terminal** button  
  ![a7](images/a7.jpg)  
+# Create a Confluent Kafka Cluster
+1.	Open [the Confluent Cloud-native Service for Apache Kafka](https://www.confluent.io/confluent-cloud/). Then click **TRY FREE**.  
+![b1](images/b1.jpg)  
+2.	Sign in with the same Google account  
+![b2](images/b2.jpg)  
+3.	Enter your personal Information. Then, click **Submit**  
+![b3](images/b3.jpg)  
+4.	Finish the final survey and click **Continue**.  
+5.	The first step in creating the Kafka cluster is to choose the free Basic configuration. Then, Choose Google Cloud as the service provider, Toronto as a **Region**, and the A single zone as the **Availability**. Then press **Continue**.   
+![b4](images/b4.jpg)  
+6.	Don’t enter the payment info.   
+![b5](images/b5.jpg)  
+7.	Finally, choose the cluster name and press **Launch cluster**  
+![b6](images/b6.jpg)  
