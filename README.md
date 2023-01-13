@@ -6,6 +6,7 @@
 2.	Get familiar with Kafka and its terminologies. 
 3.	Be able to create topics, producers, and consumers via GUI and code.
 4.	Get familiar with Google Pub/sub.
+
 ## What’s Kafka?
 1.	Watch the following video about [Event Driven Architecture (EDA)](https://www.youtube.com/watch?v=o2HJCGcYwoU)
 2.	The core component of an EDA is the Data Ingestion System also known as Publisher/subscriber (pub/sup). 
@@ -34,6 +35,7 @@ The console will be opened at the bottom of the page as shown in the following f
  ![a6](images/a6.jpg)  
 * Editor: It’s a text editor that allows you to edit plain text file as shown in the following figure. You can switch back to the console by clicking **Open Terminal** button  
  ![a7](images/a7.jpg)  
+
 # Create a Confluent Kafka Cluster
 1.	Open [the Confluent Cloud-native Service for Apache Kafka](https://www.confluent.io/confluent-cloud/). Then click **TRY FREE**.  
 ![b1](images/b1.jpg)  
@@ -48,6 +50,7 @@ The console will be opened at the bottom of the page as shown in the following f
 ![b5](images/b5.jpg)  
 7.	Finally, choose the cluster name and press **Launch cluster**  
 ![b6](images/b6.jpg)  
+
 ## Create a topic, producer and consumer using the GUI
 1.	Go to [the Confluent Kafka home page](https://confluent.cloud/home).
 2.	Click **View environments**.  
@@ -71,6 +74,7 @@ Change the **value** to **“Hello Kafka”** and the **key** to **1**. Then cli
 10.	Produce more messages. The consumer part should look like  
 ![c9](images/c8.jpg)   
 11.	If you refreshed the page, the consumption area will be empty because all messages were consumed before.  
+
 ## Create a Topic, Producer and Consumer Using Python Code
 1.	To create a Kafka client, either a producer or a consumer using a language of your choice. Click **Dashboard**. Then, at the **Set up client** area, click **Get started**. Click **Set up a new client** to get a template of a given language.  
 ![d1](images/d1.jpg)   
@@ -96,6 +100,7 @@ Save the file and run it, the output should look like
 ![d7](images/d7.jpg)   
 11.	The final script is **consumer.py**. As usual, change the topic name in line 6 to “testTopic2”. The group id is given in the 11th line. Consumers of the same group id will cooperate to read messages from the topic. The group id can be any string. The third rectangle marked in the following figure creates a consumer and subscribes it to the topic. Note, the consumer can subscribe to a set of topics. The poll function at the 23rd line reads messages from the topic. The fifth rectangle marks the code that prints the status and output of the consume function. The last box will end the consumer once **Ctrl-C** is pressed by the user that will trigger the **KeyboardInterrupt**.  
 ![d8](images/d8.jpg)    
+
 ## Simulating a Real Meter.
 1.	Copy the files from **v2** folder from the GitHub repository.
 2.	Edit **cred.json** as you did in the previous section.
@@ -103,11 +108,14 @@ Save the file and run it, the output should look like
 4.	Edit **consumer.py** to create a consumer that reads from **smartMeter** topic as you did in the previous section. Leave the file running such that you can consume the messages once they produced to the topic. The only difference in the message get decoded by the **json.loads()** function as the producer will send a JSON object instead of string.
 5.	Edit **smartMeter.py** to create to produce smart meter measurements generated randomly. Update the topic name as before to **smartMeter**. The code looks like the same except the lines shown in the following figure. Lines from 12 to 18 have values that will be used to generate messages. Lines 33 till 54 are within a loop that will randomly generate messages that will be sent to the Kafka topic.  
 ![e1](images/e1.jpg)  
+
 ## Discussion
 * What is EDA? What are its advantages and disadvantages?
 * In Kafka, what’s meant by cluster, broker, topic, replica, partition, zookeeper, controller, leader, consumer, producer, and consumer group?
+
 ## Design
 Google has an alternative ingestion tool called **Google Pub/sub**. Configure it and create a topic using Cloud interface. write a python code for a Google Pub/sub consumer and producer. The producer and the consumer should act as the smart meter shown before. **Note:** they needed a different library than that used for confluent kafka.
+
 ## Deliverables
 1. A report that includes the discussion and the design parts. 
 2. An audible video of about 3 minutes showing the smart meter using confluent cloud Kafka. 
