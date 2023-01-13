@@ -1,5 +1,8 @@
 # Lab 1: Data Ingestion System (Apache Kafka)
-
+## Repository: 
+[https://github.com/GeorgeDaoud3/SOFE4630U-MS1](https://github.com/GeorgeDaoud3/SOFE4630U-MS1)
+## Objectives
+1. 
 ## What’s Kafka?
 1.	Watch the following video about [Event Driven Architecture (EDA)](https://www.youtube.com/watch?v=o2HJCGcYwoU)
 2.	The core component of an EDA is the Data Ingestion System also known as Publisher/subscriber (pub/sup). 
