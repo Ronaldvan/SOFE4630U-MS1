@@ -90,7 +90,7 @@ Change the **value** to **“Hello Kafka”** and the **key** to **1**. Then cli
 pip install confluent-kafka[avro,json,protobuf]
 ```  
 7.	Copy the file from folder **v1** from the GitHub repository to a certain folder in your computer.  
-8.	Edit the cred.json and replace **<Bootstrap servers>**, **<CLUSTER_API_KEY>**, and  **<CLUSTER_API_SECRET>** by the values of the **Bootstrap server**, **API key**, and **API secret** you got in step 4 in this section. Save the file to be used of a credential for the three python scripts.  
+8.	Edit the cred.json and replace <**Bootstrap servers**>, <**CLUSTER_API_KEY**>, and  <**CLUSTER_API_SECRET**> by the values of the **Bootstrap server**, **API key**, and **API secret** you got in step 4 in this section. Save the file to be used of a credential for the three python scripts.  
 ![d4](images/d4.jpg)   
 9.	**createTopic.py** is the script used to create a topic. Edit the file and change the topic name in line 8th from **“<topicname>”** to **“testTopic2”**. You can change the default values of the number of partitions and the replication factor at lines 9 and 10. The credential is read from the **cred.json** file according to the python statement in line 7. The **cred.json** and **createTopic.py** should be in the same folder. In line 12, an admin client is created that has the privileged to create topics. The statement in lines 14 to 16 creates an array of new topics that contains only a single topic. The array is passed to a createTopics function to create the topics. The loop starting from line 18 goes through the results of createTopics and prints a summary of the creation results.  
 ![d5](images/d5.jpg)   
