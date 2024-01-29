@@ -60,7 +60,7 @@ The console will be opened at the bottom of the page as shown in the following f
 
 <img src="images/b3.jpg" alt="b3" width="350">  
 
-4.	Finish the final survey and click **Continue**.  
+4.	Finish the following survey and click **Continue**.  
 5.	To create your first Kafka cluster, choose the cluster name (e.g. **sofe4630u**) and Google Cloud as the service provider, Toronto as a **Region**. Then press **Continue**.   
 
 <img src="images/b4.jpg" alt="b4" width="750">  
