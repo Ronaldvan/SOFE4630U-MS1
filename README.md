@@ -120,19 +120,19 @@ Change the **value** to **“Hello Kafka!!”** and the **key** to **1**. Then c
 
 2. Click **Set up a new client** to get a template of a given language. Then, choose **Python**  
 
-   <img src="images/d1a_v2.jpg" alt="d1" width="750">  
+   <img src="images/d1a_v2.jpg" alt="d1" width="1050">  
 
 3.The first step is to get an API key for a credential that enables you to connect to the Kafka cluster. Start by clicking **Cluster API key**. Then, click **Create Kafka Cluster API key**.  
 
-   <img src="images/d2_v2.jpg" alt="d2" width="750">  
+   <img src="images/d2_v2.jpg" alt="d2" width="950">  
 
 3.	**API key** and **API secret** will be generated for you. click **Download and continue** to save them locally in your computer. The downloaded file will contain the **Bootstrap server**as well .  
 
-   <img src="images/d3_v2.jpg" alt="d3" width="350">  
+   <img src="images/d3_v2.jpg" alt="d3" width="524">  
 
 4. The following steps choose the required libraries, snippets of python code, and some tutorials. Fell free to go through them. Then click **View Clients**.
 
-5.	Install the python library  
+5.	On your computer, install the python library  
 ``` python
 pip install confluent-kafka confluent-kafka configparser
 ```  
