@@ -95,21 +95,21 @@ The console will be opened at the bottom of the page as shown in the following f
 
 8. the values and/or the keys of the messages can be configured to follow a certain schema. To make it simpler in this tutorial, no schemas will be created for the topic. 
 
-<img src="images/c4a_v2.jpg" alt="c5" width="650">  
+   <img src="images/c4a_v2.jpg" alt="c5" width="650">  
 
 9.	In the **testTopic** page, create **messages** tap which allows you to produce and consume messages.  
 
-<img src="images/c5_v2.jpg" alt="c6" width="1240">  
+   <img src="images/c5_v2.jpg" alt="c6" width="1240">  
 
-10.	Click on **+ Producer a new message to this topic** shown in the previous figure. A default value/key message will be generated for you. 
+10.	Click on **Actions** and then choose **Produce new message** as shown in the previous figure. A default value/key message will be generated for you. 
 The value is in a JSON format, but we can change it to a plain string. The key also is a number, but it can also be a string.  
-Change the **value** to **“Hello Kafka”** and the **key** to **1**. Then click **Produce**.  
+Change the **value** to **“Hello Kafka!!”** and the **key** to **1**. Then click **Produce**.  
 
-<img src="images/c6_v2.jpg" alt="c7" width="575">  
+   <img src="images/c6_v2.jpg" alt="c7" width="575">  
 
 11.	It will be automatically consumed in the consumer region. The partition will be determined by hashing the key value.  
 
-<img src="images/c7_v2.jpg" alt="c8" width="775">  
+   <img src="images/c7_v2.jpg" alt="c8" width="775">  
 
 12.	Produce more messages and check them using the consumer. 
 
