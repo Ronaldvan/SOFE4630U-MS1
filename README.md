@@ -72,10 +72,7 @@ The console will be opened at the bottom of the page as shown in the following f
 
 ## Create a topic, producer and consumer using the GUI
 1.	Go to [the Confluent Kafka home page](https://confluent.cloud/home).
-2.	Click **View environments**.  
-
-<img src="images/c0.jpg" alt="c1" width="750">  
-
+2.	Click **Environments**.  
 3.	Select the default environment.  
 
 <img src="images/c1.jpg" alt="c2" width="350">  
