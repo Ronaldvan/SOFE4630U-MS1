@@ -78,39 +78,44 @@ The console will be opened at the bottom of the page as shown in the following f
    <img src="images/c1_v2.jpg" alt="c1" width="380">  
 
 4. Keep the current free  configuration
-   <img src="images/c2_v2.jpg" alt="c2" width="420">
+
+   <img src="images/c2_v2.jpg" alt="c2" width="650">
    
-5.	Select the cluster according to its name.  
+6.	Select the cluster according to its name.  
 
    <img src="images/c2.jpg" alt="c3" width="750">  
 
 6.	Create a topic by selecting **topics**. Then click on **Create topic**.  
 
-<img src="images/c3.jpg" alt="c4" width="350">  
+   <img src="images/c3.jpg" alt="c4" width="350">  
 
 7.	Choose the topic name as **testTopic** and you can leave the number of partitions to the default value of 6. Also, by clicking on **Show advanced settings**. Thus, you can change the **Cleanup policy**, **Retention time**, **Retention size**, and **maximum message size**. For now, you clean leave them with the default values. Finally, click **create with defaults** to create the topic.  
 
-<img src="images/c4.jpg" alt="c5" width="750">  
+   <img src="images/c4.jpg" alt="c5" width="750">  
 
-8.	In the **testTopic** page, create **messages** tap which allows you to produce and consume messages.  
+8. the values and/or the keys of the messages can be configured to follow a certain schema. To make it simpler in this tutorial, no schemas will be created for the topic. 
+
+<img src="images/c4a_v2.jpg" alt="c5" width="750">  
+
+9.	In the **testTopic** page, create **messages** tap which allows you to produce and consume messages.  
 
 <img src="images/c5.jpg" alt="c6" width="750">  
 
-9.	Click on **+ Producer a new message to this topic** shown in the previous figure. A default value/key message will be generated for you. 
+10.	Click on **+ Producer a new message to this topic** shown in the previous figure. A default value/key message will be generated for you. 
 The value is in a JSON format, but we can change it to a plain string. The key also is a number, but it can also be a string.  
 Change the **value** to **“Hello Kafka”** and the **key** to **1**. Then click **Produce**.  
 
 <img src="images/c6.jpg" alt="c7" width="750">  
 
-10.	It will be automatically consumed in the consumer region. The partition will be determined by hashing the key value.  
+11.	It will be automatically consumed in the consumer region. The partition will be determined by hashing the key value.  
 
 <img src="images/c7.jpg" alt="c8" width="750">  
 
-11.	Produce more messages. The consumer part should look like  
+12.	Produce more messages. The consumer part should look like  
 
 <img src="images/c8.jpg" alt="c9" width="750">  
 
-12.	If you refreshed the page, the consumption area will be empty because all messages were consumed before.  
+13.	If you refreshed the page, the consumption area will be empty because all messages were consumed before.  
 
 ## Create a Topic, Producer and Consumer Using Python Code
 1.	To create a Kafka client, either a producer or a consumer using a language of your choice. Click **Dashboard**. Then, at the **Set up client** area, click **Get started**. Click **Set up a new client** to get a template of a given language.  
