@@ -99,23 +99,19 @@ The console will be opened at the bottom of the page as shown in the following f
 
 9.	In the **testTopic** page, create **messages** tap which allows you to produce and consume messages.  
 
-<img src="images/c5.jpg" alt="c6" width="750">  
+<img src="images/c5_v2.jpg" alt="c6" width="1240">  
 
 10.	Click on **+ Producer a new message to this topic** shown in the previous figure. A default value/key message will be generated for you. 
 The value is in a JSON format, but we can change it to a plain string. The key also is a number, but it can also be a string.  
 Change the **value** to **“Hello Kafka”** and the **key** to **1**. Then click **Produce**.  
 
-<img src="images/c6.jpg" alt="c7" width="750">  
+<img src="images/c6_v2.jpg" alt="c7" width="575">  
 
 11.	It will be automatically consumed in the consumer region. The partition will be determined by hashing the key value.  
 
-<img src="images/c7.jpg" alt="c8" width="750">  
+<img src="images/c7_v2.jpg" alt="c8" width="775">  
 
-12.	Produce more messages. The consumer part should look like  
-
-<img src="images/c8.jpg" alt="c9" width="750">  
-
-13.	If you refreshed the page, the consumption area will be empty because all messages were consumed before.  
+12.	Produce more messages and check them using the consumer. 
 
 ## Create a Topic, Producer and Consumer Using Python Code
 1.	To create a Kafka client, either a producer or a consumer using a language of your choice. Click **Dashboard**. Then, at the **Set up client** area, click **Get started**. Click **Set up a new client** to get a template of a given language.  
