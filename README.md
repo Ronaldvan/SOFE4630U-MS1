@@ -60,8 +60,8 @@ The console will be opened at the bottom of the page as shown in the following f
 
 <img src="images/b3.jpg" alt="b3" width="350">  
 
-4.	Finish the final survey and click **Continue**.  
-5.	The first step in creating the Kafka cluster is to choose the free Basic configuration. Then, Choose Google Cloud as the service provider, Toronto as a **Region**, and the A single zone as the **Availability**. Then press **Continue**.   
+4.	Finish the following survey and click **Continue**.  
+5.	To create your first Kafka cluster, choose the cluster name (e.g. **sofe4630u**) and Google Cloud as the service provider, Toronto as a **Region**. Then press **Continue**.   
 
 <img src="images/b4.jpg" alt="b4" width="750">  
 
@@ -69,9 +69,6 @@ The console will be opened at the bottom of the page as shown in the following f
 
 <img src="images/b5.jpg" alt="b5" width="750">  
 
-7.	Finally, choose the cluster name and press **Launch cluster**  
-
-<img src="images/b6.jpg" alt="b6" width="750">  
 
 ## Create a topic, producer and consumer using the GUI
 1.	Go to [the Confluent Kafka home page](https://confluent.cloud/home).
