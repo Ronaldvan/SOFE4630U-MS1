@@ -63,11 +63,11 @@ The console will be opened at the bottom of the page as shown in the following f
 4.	Finish the following survey and click **Continue**.  
 5.	To create your first Kafka cluster, choose the cluster name (e.g. **sofe4630u**) and Google Cloud as the service provider, Toronto as a **Region**. Then press **Continue**.   
 
-<img src="images/b4.jpg" alt="b4" width="750">  
+<img src="images/b4_v2.jpg" alt="b4" width="750">  
 
 6.	Don’t enter the payment info.   
 
-<img src="images/b5.jpg" alt="b5" width="750">  
+<img src="images/b5_v2.jpg" alt="b5" width="750">  
 
 
 ## Create a topic, producer and consumer using the GUI
