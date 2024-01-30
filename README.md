@@ -78,15 +78,16 @@ The console will be opened at the bottom of the page as shown in the following f
    <img src="images/c1_v2.jpg" alt="c1" width="380">  
 
 4. Keep the current free  configuration
+
    <img src="images/c2_v2.jpg" alt="c2" width="420">
    
-5.	Select the cluster according to its name.  
+6.	Select the cluster according to its name.  
 
    <img src="images/c2.jpg" alt="c3" width="750">  
 
 6.	Create a topic by selecting **topics**. Then click on **Create topic**.  
 
-<img src="images/c3.jpg" alt="c4" width="350">  
+   <img src="images/c3.jpg" alt="c4" width="350">  
 
 7.	Choose the topic name as **testTopic** and you can leave the number of partitions to the default value of 6. Also, by clicking on **Show advanced settings**. Thus, you can change the **Cleanup policy**, **Retention time**, **Retention size**, and **maximum message size**. For now, you clean leave them with the default values. Finally, click **create with defaults** to create the topic.  
 
