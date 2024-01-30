@@ -114,19 +114,24 @@ Change the **value** to **“Hello Kafka!!”** and the **key** to **1**. Then c
 12.	Produce more messages and check them using the consumer. 
 
 ## Create a Topic, Producer and Consumer Using Python Code
-1.	To create a Kafka client, either a producer or a consumer using a language of your choice. Click **Dashboard**. Then, at the **Set up client** area, click **Get started**. Click **Set up a new client** to get a template of a given language.  
+1.	To create a Kafka client for either a producer or a consumer using a language of your choice. Click **Cluster overview**. Then, at the **Set up client** area, click **Get started**. 
 
-<img src="images/d1.jpg" alt="d1" width="750">  
+   <img src="images/d1_v2.jpg" alt="d1" width="1200">  
 
-2.	Inspired by the given template, this section will guide you to write a python script for a consumer and a producer. The first step is to get an API key for a credential that enables you to create to the Kafka cluster. Start by clicking **API keys**. Then, click **Create key**.  
+2. Click **Set up a new client** to get a template of a given language. Then, choose **Python**  
 
-<img src="images/d2.jpg" alt="d2" width="750">  
+   <img src="images/d1a_v2.jpg" alt="d1" width="750">  
 
-3.	To make your life easier, choose **Global access**. Then, click **next**.  
+3.The first step is to get an API key for a credential that enables you to connect to the Kafka cluster. Start by clicking **Cluster API key**. Then, click **Create Kafka Cluster API key**.  
 
-<img src="images/d3.jpg" alt="d3" width="350">  
+   <img src="images/d2_v2.jpg" alt="d2" width="750">  
 
-4.	Click **Download and continue**. A text file will be downloaded containing the values of the **API key**, the **API secret**, and the address of the **Bootstrap server**.  
+3.	**API key** and **API secret** will be generated for you. click **Download and continue** to save them locally in your computer. The downloaded file will contain the **Bootstrap server**as well .  
+
+   <img src="images/d3_v2.jpg" alt="d3" width="350">  
+
+4. 
+
 5.	Once created, **API keys** will show a list of already created keys to redownload.  
 **Note**: The following steps should run on your local computer to act as a data source that is located outside the cloud. The following set of python codes will create a topic named “testTopic2” to produce and consume messages from  
 6.	Install the python library  
