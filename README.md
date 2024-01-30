@@ -95,7 +95,7 @@ The console will be opened at the bottom of the page as shown in the following f
 
 8. the values and/or the keys of the messages can be configured to follow a certain schema. To make it simpler in this tutorial, no schemas will be created for the topic. 
 
-<img src="images/c4a_v2.jpg" alt="c5" width="750">  
+<img src="images/c4a_v2.jpg" alt="c5" width="650">  
 
 9.	In the **testTopic** page, create **messages** tap which allows you to produce and consume messages.  
 
