@@ -79,7 +79,7 @@ The console will be opened at the bottom of the page as shown in the following f
 
 4. Keep the current free  configuration
 
-   <img src="images/c2_v2.jpg" alt="c2" width="420">
+   <img src="images/c2_v2.jpg" alt="c2" width="650">
    
 6.	Select the cluster according to its name.  
 
