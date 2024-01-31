@@ -158,6 +158,9 @@ Save the file and run it, the output should look like
 <img src="images/d8.jpg" alt="d8" width="500">  
 
 ## Simulating a Real Meter.
+
+<img src="images/smartMeter.jpg" alt="smartMeter" width="650">  
+
 1.	Copy the files from **v2** folder from the GitHub repository.
 2.	Edit **cred.json** as you did in the previous section.
 3.	Edit **createTopic.py** to create a topic called **smartMeter** as you did in the previous section.
