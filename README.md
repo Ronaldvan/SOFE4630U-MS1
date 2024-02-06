@@ -60,87 +60,88 @@ The console will be opened at the bottom of the page as shown in the following f
 
 <img src="images/b3.jpg" alt="b3" width="350">  
 
-4.	Finish the final survey and click **Continue**.  
-5.	The first step in creating the Kafka cluster is to choose the free Basic configuration. Then, Choose Google Cloud as the service provider, Toronto as a **Region**, and the A single zone as the **Availability**. Then press **Continue**.   
+4.	Finish the following survey and click **Continue**.  
+5.	To create your first Kafka cluster, choose the cluster name (e.g. **sofe4630u**) and Google Cloud as the service provider, Toronto as a **Region**. Then press **Continue**.   
 
-<img src="images/b4.jpg" alt="b4" width="750">  
+<img src="images/b4_v2.jpg" alt="b4" width="470">  
 
 6.	Don’t enter the payment info.   
 
-<img src="images/b5.jpg" alt="b5" width="750">  
+<img src="images/b5_v2.jpg" alt="b5" width="410">  
 
-7.	Finally, choose the cluster name and press **Launch cluster**  
-
-<img src="images/b6.jpg" alt="b6" width="750">  
 
 ## Create a topic, producer and consumer using the GUI
 1.	Go to [the Confluent Kafka home page](https://confluent.cloud/home).
-2.	Click **View environments**.  
-
-<img src="images/c0.jpg" alt="c1" width="750">  
-
+2.	Click **Environments**.  
 3.	Select the default environment.  
 
-<img src="images/c1.jpg" alt="c2" width="350">  
+   <img src="images/c1_v2.jpg" alt="c1" width="380">  
 
-4.	Select the cluster according to its name.  
+4. Keep the current free  configuration
 
-<img src="images/c2.jpg" alt="c3" width="750">  
+   <img src="images/c2_v2.jpg" alt="c2" width="650">
+   
+6.	Select the cluster according to its name.  
 
-5.	Create a topic by selecting **topics**. Then click on **Create topic**.  
+   <img src="images/c2.jpg" alt="c3" width="750">  
 
-<img src="images/c3.jpg" alt="c4" width="350">  
+6.	Create a topic by selecting **topics**. Then click on **Create topic**.  
 
-6.	Choose the topic name as **testTopic** and you can leave the number of partitions to the default value of 6. Also, by clicking on **Show advanced settings**. Thus, you can change the **Cleanup policy**, **Retention time**, **Retention size**, and **maximum message size**. For now, you clean leave them with the default values. Finally, click **create with defaults** to create the topic.  
+   <img src="images/c3.jpg" alt="c4" width="350">  
 
-<img src="images/c4.jpg" alt="c5" width="750">  
+7.	Choose the topic name as **testTopic** and you can leave the number of partitions to the default value of 6. Also, by clicking on **Show advanced settings**. Thus, you can change the **Cleanup policy**, **Retention time**, **Retention size**, and **maximum message size**. For now, you clean leave them with the default values. Finally, click **create with defaults** to create the topic.  
 
-7.	In the **testTopic** page, create **messages** tap which allows you to produce and consume messages.  
+   <img src="images/c4.jpg" alt="c5" width="750">  
 
-<img src="images/c5.jpg" alt="c6" width="750">  
+8. the values and/or the keys of the messages can be configured to follow a certain schema. To make it simpler in this tutorial, no schemas will be created for the topic. 
 
-8.	Click on **+ Producer a new message to this topic** shown in the previous figure. A default value/key message will be generated for you. 
+   <img src="images/c4a_v2.jpg" alt="c5" width="650">  
+
+9.	In the **testTopic** page, create **messages** tap which allows you to produce and consume messages.  
+
+   <img src="images/c5_v2.jpg" alt="c6" width="1240">  
+
+10.	Click on **Actions** and then choose **Produce new message** as shown in the previous figure. A default value/key message will be generated for you. 
 The value is in a JSON format, but we can change it to a plain string. The key also is a number, but it can also be a string.  
-Change the **value** to **“Hello Kafka”** and the **key** to **1**. Then click **Produce**.  
+Change the **value** to **“Hello Kafka!!”** and the **key** to **1**. Then click **Produce**.  
 
-<img src="images/c6.jpg" alt="c7" width="750">  
+   <img src="images/c6_v2.jpg" alt="c7" width="575">  
 
-9.	It will be automatically consumed in the consumer region. The partition will be determined by hashing the key value.  
+11.	It will be automatically consumed in the consumer region. The partition will be determined by hashing the key value.  
 
-<img src="images/c7.jpg" alt="c8" width="750">  
+   <img src="images/c7_v2.jpg" alt="c8" width="775">  
 
-10.	Produce more messages. The consumer part should look like  
-
-<img src="images/c8.jpg" alt="c9" width="750">  
-
-11.	If you refreshed the page, the consumption area will be empty because all messages were consumed before.  
+12.	Produce more messages and check them using the consumer. 
 
 ## Create a Topic, Producer and Consumer Using Python Code
-1.	To create a Kafka client, either a producer or a consumer using a language of your choice. Click **Dashboard**. Then, at the **Set up client** area, click **Get started**. Click **Set up a new client** to get a template of a given language.  
+1.	To create a Kafka client for either a producer or a consumer using a language of your choice. Click **Cluster overview**. Then, at the **Set up client** area, click **Get started**. 
 
-<img src="images/d1.jpg" alt="d1" width="750">  
+   <img src="images/d1_v2.jpg" alt="d1" width="1200">  
 
-2.	Inspired by the given template, this section will guide you to write a python script for a consumer and a producer. The first step is to get an API key for a credential that enables you to create to the Kafka cluster. Start by clicking **API keys**. Then, click **Create key**.  
+2. Click **Set up a new client** to get a template of a given language. Then, choose **Python**  
 
-<img src="images/d2.jpg" alt="d2" width="750">  
+   <img src="images/d1a_v2.jpg" alt="d1" width="1050">  
 
-3.	To make your life easier, choose **Global access**. Then, click **next**.  
+3.The first step is to get an API key for a credential that enables you to connect to the Kafka cluster. Start by clicking **Cluster API key**. Then, click **Create Kafka Cluster API key**.  
 
-<img src="images/d3.jpg" alt="d3" width="350">  
+   <img src="images/d2_v2.jpg" alt="d2" width="950">  
 
-4.	Click **Download and continue**. A text file will be downloaded containing the values of the **API key**, the **API secret**, and the address of the **Bootstrap server**.  
-5.	Once created, **API keys** will show a list of already created keys to redownload.  
-**Note**: The following steps should run on your local computer to act as a data source that is located outside the cloud. The following set of python codes will create a topic named “testTopic2” to produce and consume messages from  
-6.	Install the python library  
+3.	**API key** and **API secret** will be generated for you. click **Download and continue** to save them locally in your computer. The downloaded file will contain the **Bootstrap server**as well .  
+
+   <img src="images/d3_v2.jpg" alt="d3" width="524">  
+
+4. The following steps choose the required libraries, snippets of python code, and some tutorials. Fell free to go through them. Then click **View Clients**.
+
+5.	On your computer, install the python library  
 ``` python
-pip install confluent-kafka[avro,json,protobuf]
+pip install confluent-kafka confluent-kafka configparser
 ```  
-7.	Copy the file from folder **v1** from the GitHub repository to a certain folder in your computer.  
-8.	Edit the cred.json and replace <**Bootstrap servers**>, <**CLUSTER_API_KEY**>, and  <**CLUSTER_API_SECRET**> by the values of the **Bootstrap server**, **API key**, and **API secret** you got in step 4 in this section. Save the file to be used as a credential for the other python scripts.  
+6.	Download the files from folder **v1** from the GitHub repository to a certain folder in your computer.  
+7.	Edit the cred.json and replace <**Bootstrap servers**>, <**CLUSTER_API_KEY**>, and  <**CLUSTER_API_SECRET**> by the values of the **Bootstrap server**, **API key**, and **API secret** you got in step 4 in this section. Save the file to be used as a credential for the other python scripts.  
 
 <img src="images/d4.jpg" alt="d4" width="350">     
 
-9.	**createTopic.py** is the script used to create a topic. Edit the file and change the topic name in line 8th from <"**topicname**"> to "**testTopic2**". You can change the default values of the number of partitions and the replication factor at lines 9 and 10. The credential is read from the **cred.json** file according to the python statement in line 7. The **cred.json** and **createTopic.py** should be in the same folder. In line 12, an admin client is created that has the privileged to create topics. The statement in lines 14 to 16 creates an array of new topics that contains only a single topic. The array is passed to a createTopics function to create the topics. The loop starting from line 18 goes through the results of createTopics and prints a summary of the creation results.  
+8.	**createTopic.py** is the script used to create a topic. Edit the file and change the topic name in line 8th from <"**topicname**"> to "**testTopic2**". You can change the default values of the number of partitions and the replication factor at lines 9 and 10. The credential is read from the **cred.json** file according to the python statement in line 7. The **cred.json** and **createTopic.py** should be in the same folder. In line 12, an admin client is created that has the privileged to create topics. The statement in lines 14 to 16 creates an array of new topics that contains only a single topic. The array is passed to a createTopics function to create the topics. The loop starting from line 18 goes through the results of createTopics and prints a summary of the creation results.  
 
 <img src="images/d5.jpg" alt="d5" width="750">  
 
@@ -148,15 +149,18 @@ Save the file and run it, the output should look like
 
 <img src="images/d6.jpg" alt="d6" width="200">  
 
-10.	**producer.py** is a python script that produces messages to a topic. Following the same technique change the topic name in line 8 to **“testTopic2”**. The second marked box in the following figure is a call back function that prints the output of each produce function that sends a message to the Kafka. The code in the third rectangle reads two strings and an integer that represents the key, value and the partition number from the user. Entering any integer less than -1 will stop the loop. The fourth box sends the message via produce function and invokes the call back function using the poll function. The last box flushes the producer internal buffer to ensure that all messages are already sent before ending the program. **Note:** a partition of value of -1 or when it's not included in the produce function, will make kafka decides automatically the paratition number accordinf to a built-in hashing function.  
+9.	**producer.py** is a python script that produces messages to a topic. Following the same technique change the topic name in line 8 to **“testTopic2”**. The second marked box in the following figure is a call back function that prints the output of each produce function that sends a message to the Kafka. The code in the third rectangle reads two strings and an integer that represents the key, value and the partition number from the user. Entering any integer less than -1 will stop the loop. The fourth box sends the message via produce function and invokes the call back function using the poll function. The last box flushes the producer internal buffer to ensure that all messages are already sent before ending the program. **Note:** a partition of value of -1 or when it's not included in the produce function, will make kafka decides automatically the paratition number accordinf to a built-in hashing function.  
 
 <img src="images/d7.jpg" alt="d7" width="750">  
 
-11.	The final script is **consumer.py**. As usual, change the topic name in line 6 to “testTopic2”. The group id is given in the 11th line. Consumers of the same group id will cooperate to read messages from the topic. The group id can be any string. The third rectangle marked in the following figure creates a consumer and subscribes it to the topic. Note, the consumer can subscribe to a set of topics. The poll function at the 23rd line reads messages from the topic. The fifth rectangle marks the code that prints the status and output of the consume function. The last box will end the consumer once **Ctrl-C** is pressed by the user that will trigger the **KeyboardInterrupt**.  
+10.	The final script is **consumer.py**. As usual, change the topic name in line 6 to “testTopic2”. The group id is given in the 11th line. Consumers of the same group id will cooperate to read messages from the topic. The group id can be any string. The third rectangle marked in the following figure creates a consumer and subscribes it to the topic. Note, the consumer can subscribe to a set of topics. The poll function at the 23rd line reads messages from the topic. The fifth rectangle marks the code that prints the status and output of the consume function. The last box will end the consumer once **Ctrl-C** is pressed by the user that will trigger the **KeyboardInterrupt**.  
 
 <img src="images/d8.jpg" alt="d8" width="500">  
 
 ## Simulating a Real Meter.
+
+<img src="images/smartMeter.jpg" alt="smartMeter" width="650">  
+
 1.	Copy the files from **v2** folder from the GitHub repository.
 2.	Edit **cred.json** as you did in the previous section.
 3.	Edit **createTopic.py** to create a topic called **smartMeter** as you did in the previous section.
