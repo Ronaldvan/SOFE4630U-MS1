@@ -200,3 +200,6 @@ Download the Labels.csv file from the Design folder in the repository. Write two
 4. Another audible video of about 5 minutes showing the design part. 
 
 Put the GitHub link and video links inside your report, and submit the report.
+
+## Acknowledgements
+This repository is a fork of [zubxxr/SOFE4630U-MS1](https://github.com/zubxxr/SOFE4630U-MS1), originally based on [GeorgeDaoud3/SOFE4630U-MS1](https://github.com/GeorgeDaoud3/SOFE4630U-MS1). Credit to the original author(s) for the initial implementation. 
