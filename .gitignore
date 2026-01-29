@@ -1,0 +1,6 @@
+# Google Cloud credentials
+*.json
+
+# Python virtual environments
+pubsub-env/
+
